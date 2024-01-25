@@ -1,0 +1,52 @@
+@mixin bolish($dspl-fl: flex, $algn-itm: center, $jst-cnt: space-between){
+  display: $dspl-fl;
+  align-items: $algn-itm;
+  justify-content: $jst-cnt;
+}
+@mixin oddiybolish($dsp-fl: flex, $alg-cen: center, $gp: 5px){
+  display: $dsp-fl;
+  align-items: $alg-cen;
+  gap: $gp;
+}
+@mixin yozuvlar-uchun($fsiz: 18px, $f-stl: normal, $f-wgt: 400, $ln-hgt: 30px){
+  font-size: $fsiz;
+  font-style: $f-stl;
+  font-weight: $f-wgt;
+  line-height: $ln-hgt;
+};
+@mixin btn-uchun($dsp: flex, $pdn: 9px 25px, $algn: center, $brd: 6px){
+  display: $dsp;
+  padding: $pdn;
+  align-items: $algn;
+  border-radius: $brd;
+};
+
+@mixin hbirlar($fs: 56px, $fst: normal, $fwg: 400, $fln: 67.2px){
+  font-size: $fs;
+  font-style: $fst;
+  font-weight: $fwg;
+  line-height: $fln;
+};
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+input{
+  outline: none;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #f1f0f0;
+}

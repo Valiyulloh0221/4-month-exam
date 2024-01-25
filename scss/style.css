@@ -1,0 +1,745 @@
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #f1f0f0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  font-family: Roboto;
+}
+body header {
+  max-width: 100%;
+  padding: 21px 5%;
+}
+body header #navbar-responsive.open {
+  left: 0;
+}
+body header .menu-btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  display: none;
+}
+body header .menu-btn span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+}
+body header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+body header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+body header .nav-links a {
+  color: #65665C;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+body header .nav-links button {
+  display: flex;
+  padding: 9px 25px;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+body header .nav-links .shad {
+  flex-shrink: 0;
+  gap: 8px;
+  border: 1px solid #E7E8E3;
+  background: #FFF;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body header .nav-links .prop {
+  color: #FFF;
+  border: 1px solid #CF6F49;
+  background: #CF6F49;
+}
+body main {
+  width: 100%;
+  margin-top: 92px;
+}
+body main .hero-section {
+  width: 100%;
+  background: #F5F5F2;
+}
+body main .hero-section .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .hero-section .container .place svg {
+  fill: #E7E8E3;
+}
+body main .hero-section .container .place .pbk {
+  text-align: center;
+  margin-left: 6%;
+  margin-top: 13px;
+  width: 171px;
+  height: 29px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #E7E8E3;
+}
+body main .hero-section .container .place .pbk p {
+  padding-top: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+body main .hero-section .container .place h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 6%;
+  max-width: 516px;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67.2px;
+}
+body main .hero-section .container .place p {
+  padding-bottom: 95px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 6%;
+  max-width: 504px;
+}
+body main .hero-section .container .place .ohirgisvg {
+  position: absolute;
+  right: 50%;
+}
+body main .hero-section .container .hero-image {
+  background-image: url(../images/hero-rasm.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 686px;
+}
+body main .howwork {
+  padding: 67px 5% 128px;
+}
+body main .howwork .container .worklogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .howwork .container .worklogo h5 {
+  color: #2A2C1F;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .howwork .container .worklogo .logos {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  gap: 32px;
+}
+body main .howwork .container .worklogo .logos svg {
+  fill: #737680;
+}
+body main .howwork .container .tanishtirish {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .howwork .container .tanishtirish h2 {
+  padding-top: 122px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #2A2C1F;
+  text-align: center;
+}
+body main .howwork .container .tanishtirish p {
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 21px;
+  max-width: 754px;
+}
+body main .howwork .container .cards {
+  padding-top: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .howwork .container .cards .card {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 49px;
+  width: 405px;
+  height: 291px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid #E7E8E3;
+  background: #FFF;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-direction: column;
+}
+body main .howwork .container .cards .card:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .howwork .container .cards .card h4 {
+  padding-top: 20px;
+  color: #2A2C1F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+body main .howwork .container .cards .card p {
+  text-align: center;
+  padding-top: 10px;
+  color: #65665C;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+body main .bsthouse-section {
+  padding-bottom: 128px;
+}
+body main .bsthouse-section .container {
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .bsthouse-section .container .yozuv .pbk {
+  text-align: center;
+  width: 107px;
+  height: 29px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #E7E8E3;
+}
+body main .bsthouse-section .container .yozuv .pbk p {
+  color: #2A2C1F;
+  padding-top: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+body main .bsthouse-section .container .yozuv h2 {
+  color: #2A2C1F;
+  padding-top: 20px;
+  max-width: 453px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+body main .bsthouse-section .container .yozuv p {
+  padding-bottom: 21px;
+  padding-top: 28px;
+  max-width: 520px;
+  color: #65665C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+body main .bsthouse-section .container .yozuv .btns {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body main .bsthouse-section .container .yozuv .btns button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2A2C1F;
+  width: 192px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #E7E8E3;
+  background: #FFF;
+  transition: 0.4s;
+}
+body main .bsthouse-section .container .yozuv .btns button:hover {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .bsthouse-section .container .yozuv .btns a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2A2C1F;
+}
+body main .bsthouse-section .container .rasm {
+  background-image: url(../images/bsthouse-section.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  width: 43%;
+  height: 600px;
+}
+body main .quick-easy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+  padding-bottom: 128px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+body main .quick-easy-right {
+  display: grid;
+}
+body main .quick-easy-right-p1 {
+  max-width: 127px;
+  padding: 8px 12px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #2a2c1f;
+  border-radius: 32px;
+  background: #e7e8e3;
+}
+body main .quick-easy-right-h3 {
+  padding: 25px 115px 29px 0px;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #2a2c1f;
+}
+body main .quick-easy-right-p2 {
+  padding: 0px 0px 28px 0px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #65665c;
+}
+body main .quick-easy-right-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 24px;
+}
+body main .quick-easy-right-cards-item-icon {
+  padding: 8px;
+  color: #cf6f49;
+  font-family: "Material Icons";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  border-radius: 8px;
+  background: #fae8e1;
+}
+body main .quick-easy-right-cards-item-h4 {
+  padding: 16px 0px 18px 0px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a2c1f;
+  line-height: 28px;
+}
+body main .quick-easy-right-cards-item-p1 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #65665c;
+  line-height: 24px;
+}
+body main .quick-easy-right-cards-item-p2 {
+  padding-bottom: 21px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #65665c;
+  line-height: 24px;
+}
+body main .quick-easy-right-explore {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+body main .quick-easy-right-explore-btn {
+  padding: 13px 25px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2a2c1f;
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .quick-easy-right-explore-link {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2a2c1f;
+}
+body main .quick-easy-left img {
+  border-radius: 16px;
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+body main .properties {
+  background-color: #f5f5f2;
+}
+body main .properties-body-text {
+  padding-top: 198px;
+  padding-bottom: 80px;
+  align-items: center;
+}
+body main .properties-body-text-p {
+  max-width: 92px;
+  padding: 5px 0px;
+  margin-bottom: 21px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #2a2c1f;
+  border-radius: 32px;
+  background: #e7e8e3;
+}
+body main .properties-body-text-h3 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #2a2c1f;
+}
+body main .properties-body-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 80px;
+}
+body main .properties-body-cards-item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 406.5px;
+  border-radius: 0px 0px 16px 16px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .properties-body-cards-item-text {
+  margin-top: -5px;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 0px 0px 16px 16px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .properties-body-cards-item-text-h4 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  color: #2a2c1f;
+}
+body main .properties-body-cards-item-text-h6 {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2c1f;
+  line-height: 27px;
+}
+body main .properties-body-cards-item-text-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 16px 0px;
+}
+body main .properties-body-cards-item-text-location p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #65665c;
+  line-height: 24px;
+}
+body main .properties-explore {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  padding-bottom: 10px;
+}
+body main .properties-explore-btn {
+  padding: 13px 25px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2a2c1f;
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .properties-explore-link {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2a2c1f;
+}
+body main .contact {
+  background-color: #f5f5f2;
+}
+body main .contact--body-text {
+  text-align: center;
+}
+body main .contact--body-text h4 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  color: #2a2c1f;
+}
+body main .contact--body-text p {
+  padding: 25px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #65665c;
+}
+body main .contact--body-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 80px 0px;
+}
+body main .contact--body-cards-item {
+  padding-left: 33px;
+  padding-bottom: 33px;
+  border-radius: 16px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .contact--body-cards-item h5 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #2a2c1f;
+  padding: 33px 0px 12px 0px;
+}
+body main .contact--body-cards-item a {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2a2c1f;
+  line-height: 24px;
+}
+body main .contact-explore {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  padding-bottom: -700px;
+}
+body main .contact-explore-btn {
+  padding: 13px 25px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2a2c1f;
+  border-radius: 6px;
+  border: 1px solid #e7e8e3;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+body main .contact-explore-link {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2a2c1f;
+}
+body main .families {
+  width: 100%;
+  max-width: 1280px;
+  height: 465px;
+  flex-shrink: 0;
+  margin: 80px;
+  position: relative;
+  top: 200px;
+  text-align: center;
+  border-radius: 24px;
+  background: #65665c;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -180px;
+}
+body main .families img {
+  margin: 96px 0px 13px 0px;
+  padding: 10px;
+  color: #65665c;
+  text-align: center;
+  font-family: "Material Icons";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 8px;
+  background: #fff;
+  line-height: 48px;
+}
+body main .families h4 {
+  padding-bottom: 26px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57.6px;
+}
+body main .families p {
+  width: 100%;
+  max-width: 765px;
+  color: #e7e8e3;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  margin: auto;
+}
+body main .families button {
+  margin: 21px 0px 96px 0px;
+  padding: 13px 25px;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 6px;
+  border: 1px solid #cf6f49;
+  background: #cf6f49;
+}
+
+@media (max-width: 950) {
+  body {
+    max-width: 950px;
+  }
+  header {
+    max-width: 950px !important;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  #navbar-responsive.open {
+    max-width: 950px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #navbar-responsive {
+    position: fixed;
+    top: 90px;
+    bottom: 0;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    transition: 0.5s;
+  }
+  .menu-btn {
+    display: flex !important;
+  }
+}/*# sourceMappingURL=style.css.map */
